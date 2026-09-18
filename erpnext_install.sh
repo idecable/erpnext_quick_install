@@ -620,6 +620,7 @@ sleep 2
 # failure showed up as "node not found" from bench socketio on a fresh
 # nvm-based install.
 #
+
 echo -e "${YELLOW}Linking nvm-installed Node into /usr/local/bin so supervisor can find it...${NC}"
 nvm_node_bin_dir="$(dirname "$(nvm which default)")"
 sudo ln -sf "$nvm_node_bin_dir/node" /usr/local/bin/node
